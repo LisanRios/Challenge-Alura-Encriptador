@@ -8,17 +8,28 @@
     <title>Challenge 1</title>
 </head>
 <body>
-    <div class="conteiner">
+    <div class="container">
         <div class="logo">
-            <h1>logo</h1>
+            <img class="logoImg" src="/img/logo.png" alt="">
+            <h1>titulo</h1>
         </div>
         <div class="left">
-            <h1>panel 1</h1>
+            <input class="text-input" type="text" name="input-texto" id="inputtexto" placeholder="Ingrese el texto aqui">
         </div>
         <div class="right">
-            <h1>panel 2</h1>
+            <img src="img/Muñeco.png" id="imgDer">
+            <h2 id="texto">Ningún mensaje fue encontrado</h2>
+            <textarea id="texto2">Ingresa el texto que desees encriptar o desencriptar.</textarea>
+            <button type="button" id="copiar" onclick="copia()">¡Copiar!</button>
+        </div>
+        <div class="left-button">
+            <p>Sólo letra minusculas y sin acento</p>
+            <button type="button" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+            <button type="button" id="btn-desencriptar" onclick="desencriptar()">desencriptar!</button>
         </div>
     </div>
-    
+    <footer>
+        <h3>Desarrollado por Lisandro Rios</h3>
+    </footer>
 </body>
 </html>
